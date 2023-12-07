@@ -1,0 +1,134 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  width: 100%;
+  height: auto;
+  min-height: calc(100svh - 20rem);
+  background-color: var(--secondary-card-background);
+  border-radius: 0.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.optionsWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  width: 40vw;
+}
+
+.feedback {
+  color: red;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.levelWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0 1.25rem;
+}
+
+.startWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0 1.25rem;
+  text-align: center;
+
+  button {
+    margin-top: 1rem;
+    width: 10vw;
+
+    @media screen and (max-width: 720px) {
+      width: 25vw;
+    }
+  }
+}
+
+.endWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0 1.25rem;
+  text-align: center;
+}
+
+.endContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0 1.25rem;
+  text-align: center;
+
+  @media screen and (max-width: 720px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.animals {
+  font-size: 8rem;
+}
+
+.animalsWrapper {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+@media screen and(max-width:720px){
+  .animalsWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .animals {
+    font-size: 6rem;
+  }
+
+  .optionsWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+}
+
+
+.button {
+  margin-top: 1rem;
+  background-color: var(--card-button);
+  border: 1px solid transparent;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--main-bg);
+  color: var(--button-color);
+}

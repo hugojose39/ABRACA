@@ -1,0 +1,89 @@
+.cardWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  background-color: var(--card-background);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--card-border);
+  height: 100%;
+  width: 100%;
+  min-height: 12rem;
+  color: var(--text-color);
+
+  @media (max-width: 768px) {
+    min-height: 8rem;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  .card_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+
+    .emoji {
+      font-size: 3rem;
+
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+
+    .name {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-top: 1rem;
+    }
+  }
+
+  .card_image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.cardPassed {
+  border: 1px solid var(--green);
+}
+
+.button {
+  margin-top: 1rem;
+  background-color: var(--card-button);
+  border: 1px solid transparent;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--card-button);
+  color: var(--button-color);
+}

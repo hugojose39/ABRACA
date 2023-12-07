@@ -1,0 +1,47 @@
+:root {
+  font-family: "Nunito", sans-serif;
+  --main-bg: #F1F5FF;
+  --text-color: #152629;
+  --text-color-lg: rgb(131, 142, 176);
+  --card-button: #FFF;
+  --green: #21a02e;
+  --card-background: #F0F0F0;
+  --card-border: #D2D2D2;
+  --secondary-card-background: #FFF;
+  --secondary-card-border: #D2D2D2;
+  --active-button-border: #D2D2D2;
+  --button-color: black;
+}
+
+.dark {
+  --main-bg: #152629;
+  --text-color: #F1F5FF;
+  --theme-page-background: #111;
+  --theme-page-text: #FFF;
+  --card-button: #294B51;
+  --text-color-lg: #cfd7ea;
+  --green: #90f69b;
+  --card-background: #1c2a2f;
+  --card-border: #294B51;
+  --secondary-card-background: #294B51;
+  --secondary-card-border: #294B51;
+  --active-button-border: #FFF;
+  --button-color: #FFF;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

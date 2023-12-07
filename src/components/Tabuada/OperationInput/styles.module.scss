@@ -1,0 +1,88 @@
+.cardWrapper {
+  display: flex;
+  align-content: flex-start;
+  gap: 0.75rem;
+  border: 1px solid transparent;
+  flex-direction: column;
+  background-color: var(--card-background);
+  min-height: 4rem;
+  justify-content: center;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.cardWrapperError {
+  border: 1px solid #FF0000;
+}
+
+.cardWrapperSuccess {
+  border: 1px solid #00FF00;
+}
+
+.operationWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0 0.5rem;
+
+  @media (max-width: 768px) {
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.input {
+  background-color: var(--secondary-card-background);
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.textInput {
+  background-color: var(--secondary-card-background);
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  width: 4rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  color: var(--text-color);
+}
+
+.button {
+  background-color: #3fc23f;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  width: 4rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  &:disabled {
+    background-color: #D2D2D2;
+    cursor: not-allowed;
+  }
+}
+
+
+

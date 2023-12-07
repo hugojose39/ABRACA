@@ -1,0 +1,129 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--secondary-card-background);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border-top-left-radius: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.operations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+}
+
+.operationTogglerActive {
+  border: 1px solid var(--active-button-border) !important;
+}
+
+.operationToggler {
+  color: var(--button-color);
+  border: 1px solid transparent;
+  margin-top: 1rem;
+  background-color: var(--card-button);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--card-button);
+}
+
+.numberOptions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  .numberOption {
+    height: 2rem;
+    width: 3rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    background-color: var(--secondary-card-background);
+    border: 1px solid transparent;
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+
+
+  .numberOptionActive {
+    border: 2px solid var(--active-button-border);
+  }
+}
+
+.mobileNumberOptions {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    select  {
+      height: 2rem;
+      width: 25svw;
+      border-top-right-radius: 0.5rem;
+      border-top-left-radius: 0.5rem;
+      background-color: var(--secondary-card-background);
+      border: 1px solid transparent;
+      font-size: 1rem;
+      color: var(--text-color);
+
+      &:hover {
+        border: 1px solid var(--secondary-card-border);
+      }
+    }
+  }
+
+  .numberOption {
+    height: 2rem;
+    width: 25svw;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    background-color: var(--secondary-card-background);
+    border: 1px solid transparent;
+    font-size: 1rem;
+
+    &:hover {
+      border: 1px solid var(--secondary-card-border);
+    }
+  }
+}
