@@ -74,6 +74,11 @@ export default function JogoDaMemoria() {
   const [tries, setTries] = useState(0); 
   const [wait, setWait] = useState(false);
 
+  const initializeGame = () => {
+    const newCardData = cardData.map(card => ({ ...card, isFlipped: false, order: Math.floor(Math.random() * 8) }));
+    setCards(newCardData);
+  };
+
   const flipCard = (cardToFlip: CardType) => {
     setCards(prevCards =>
       prevCards.map(card =>
@@ -158,6 +163,7 @@ export default function JogoDaMemoria() {
   }
 
   useEffect(() => {
+    initializeGame();
     flipCardsAndSetTimeout();
 
   }, []);
