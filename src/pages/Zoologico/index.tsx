@@ -89,7 +89,7 @@ export default function Zoologico() {
 
   const displayGame = () => (
     <div className={styles.levelWrapper}>
-      <h2>Level {level}</h2>
+      <h2>Nível {level}</h2>
 
       {feedback && <p className={styles.feedback}>{feedback}</p>}
 
